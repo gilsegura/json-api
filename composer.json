@@ -1,0 +1,33 @@
+{
+    "name": "gilsegura/json-api",
+    "description": "This is a project providing definition for JSON:API schema.",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=8.3",
+        "gilsegura/assert": "dev-main",
+        "gilsegura/serializer": "dev-main"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3",
+        "phpstan/phpstan": "^1",
+        "phpunit/phpunit": "^11",
+        "rector/rector": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "JsonApi\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JsonApi\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
